@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Power — Fitness Performance | Academia em Votorantim</title>
+  
+  <!-- Meta Tags SEO & Acessibilidade -->
+  <meta name="description" content="Studio Power: Musculação, Personal Training, Boxe e Treino Funcional em Votorantim/SP. 100% de atenção do nosso time pra você. Agende sua aula experimental!">
+  <meta name="keywords" content="academia votorantim, studio power, musculação votorantim, boxe votorantim, funcional votorantim, personal trainer votorantim">
+  <meta name="author" content="Studio Power - Fitness Performance">
+  <meta name="theme-color" content="#09090b">
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Studio Power — Mais que treino, um investimento em você">
+  <meta property="og:description" content="Musculação, Personal Training, Boxe e Treino Funcional em Votorantim/SP. Agende sua aula experimental no WhatsApp.">
+  <meta property="og:image" content="assets/images/hero-gym.jpg">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Google Fonts: Montserrat (Display) & Plus Jakarta Sans (Texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Folha de Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =======================================================================
+       1. HEADER
+       ======================================================================= -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Studio Power Home">
+        <span class="brand-name">STUDIO <span>POWER</span></span>
+        <span class="brand-sub">FITNESS PERFORMANCE</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="nav-desktop" aria-label="Navegação principal">
+        <a href="#por-que" class="nav-link">Por Que Nós</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#estrutura" class="nav-link">Estrutura</a>
+        <a href="#teaser" class="nav-link">Vídeo Teaser</a>
+        <a href="#aula-experimental" class="nav-link">Aula Experimental</a>
+        <a href="#localizacao" class="nav-link">Localização</a>
+      </nav>
+
+      <!-- Ações do Header -->
+      <div class="header-actions">
+        <a href="https://www.instagram.com/studiopower_votorantim/" target="_blank" rel="noopener noreferrer" class="btn-header-ig" aria-label="Instagram da Studio Power" title="Instagram @studiopower_votorantim">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/5515988299307?text=Ol%C3%A1!%20Conheci%20a%20Studio%20Power%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-header-cta">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.97 6.84C8.79 6.84 8.5 6.91 8.25 7.18C8.01 7.45 7.33 8.08 7.33 9.38C7.33 10.68 8.28 11.94 8.41 12.11C8.54 12.28 10.27 14.93 12.91 16.07C13.54 16.34 14.03 16.5 14.41 16.62C15.05 16.82 15.63 16.79 16.09 16.72C16.61 16.64 17.67 16.08 17.89 15.45C18.12 14.83 18.12 14.29 18.05 14.18C17.98 14.07 17.8 14.01 17.53 13.88C17.27 13.74 15.98 13.11 15.74 13.02C15.5 12.93 15.33 12.89 15.15 13.16C14.98 13.42 14.48 14.01 14.33 14.18C14.18 14.36 14.03 14.38 13.77 14.25C13.5 14.11 12.65 13.84 11.64 12.94C10.85 12.24 10.32 11.37 10.16 11.11C10.01 10.84 10.15 10.7 10.28 10.56C10.4 10.44 10.55 10.25 10.68 10.09C10.82 9.94 10.87 9.82 10.96 9.65C11.05 9.47 11 9.32 10.93 9.18C10.87 9.05 10.34 7.76 10.13 7.23C9.92 6.72 9.7 6.79 9.53 6.78C9.38 6.78 9.19 6.84 8.97 6.84Z"/>
+          </svg>
+          <span>Reserve seu horário</span>
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dropdown Mobile -->
+    <div class="nav-mobile" id="navMobile" aria-label="Menu móvel">
+      <a href="#por-que" class="nav-link mobile-link">Por Que Nós</a>
+      <a href="#servicos" class="nav-link mobile-link">Serviços</a>
+      <a href="#estrutura" class="nav-link mobile-link">Estrutura</a>
+      <a href="#teaser" class="nav-link mobile-link">Vídeo Teaser</a>
+      <a href="#aula-experimental" class="nav-link mobile-link">Aula Experimental</a>
+      <a href="#localizacao" class="nav-link mobile-link">Localização</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-wrapper">
+        <img 
+          src="assets/images/hero-gym.jpg" 
+          alt="Interior da academia Studio Power em Votorantim com aparelhos de musculação pretos e vermelhos" 
+          class="hero-bg-img"
+          fetchpriority="high"
+          width="1920" 
+          height="1080"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content reveal-init">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Votorantim / SP</span>
+          </div>
+
+          <h1 class="hero-title">
+            MAIS QUE TREINO, <em>UM INVESTIMENTO EM VOCÊ.</em>
+          </h1>
+
+          <p class="hero-description">
+            Aqui você encontra atenção de verdade do nosso time, equipamentos de alta qualidade e o ambiente certo para evoluir no seu próprio ritmo.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/5515988299307?text=Ol%C3%A1!%20Conheci%20a%20Studio%20Power%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.97 6.84C8.79 6.84 8.5 6.91 8.25 7.18C8.01 7.45 7.33 8.08 7.33 9.38C7.33 10.68 8.28 11.94 8.41 12.11C8.54 12.28 10.27 14.93 12.91 16.07C13.54 16.34 14.03 16.5 14.41 16.62C15.05 16.82 15.63 16.79 16.09 16.72C16.61 16.64 17.67 16.08 17.89 15.45C18.12 14.83 18.12 14.29 18.05 14.18C17.98 14.07 17.8 14.01 17.53 13.88C17.27 13.74 15.98 13.11 15.74 13.02C15.5 12.93 15.33 12.89 15.15 13.16C14.98 13.42 14.48 14.01 14.33 14.18C14.18 14.36 14.03 14.38 13.77 14.25C13.5 14.11 12.65 13.84 11.64 12.94C10.85 12.24 10.32 11.37 10.16 11.11C10.01 10.84 10.15 10.7 10.28 10.56C10.4 10.44 10.55 10.25 10.68 10.09C10.82 9.94 10.87 9.82 10.96 9.65C11.05 9.47 11 9.32 10.93 9.18C10.87 9.05 10.34 7.76 10.13 7.23C9.92 6.72 9.7 6.79 9.53 6.78C9.38 6.78 9.19 6.84 8.97 6.84Z"/>
+              </svg>
+              <span>RESERVE SEU HORÁRIO</span>
+            </a>
+
+            <a href="#estrutura" class="btn btn-secondary">
+              <span>Conhecer o Espaço</span>
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <span>100% de Atenção do Nosso Time</span>
+            </div>
+            <div class="highlight-item">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <span>Musculação • Boxe • Funcional</span>
+            </div>
+            <div class="highlight-item">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <span>Ambiente Seguro e Organizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. POR QUE STUDIO POWER
+         ======================================================================= -->
+    <section class="section why-section" id="por-que">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">Diferenciais</div>
+          <h2 class="section-title">POR QUE TREINAR NA STUDIO POWER</h2>
+          <p class="section-subtitle">
+            Aqui nós acreditamos que o seu ambiente de treino deve somar na sua rotina, trazendo motivação, acolhimento e resultados reais.
+          </p>
+        </div>
+
+        <div class="why-quote-box reveal-init">
+          <p class="why-quote">"AQUI VOCÊ SE SENTE EM CASA — UM PEDAÇO DA SUA CASA."</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal-init">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">100% DE ATENÇÃO DO NOSSO TIME</h3>
+            <p class="why-card-text">
+              Orientação próxima para você treinar com tranquilidade e postura correta, sem se sentir desamparado ou com dúvidas sobre o que fazer.
+            </p>
+          </div>
+
+          <div class="why-card reveal-init">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="10" rx="2"></rect>
+                <line x1="6" y1="7" x2="6" y2="17"></line>
+                <line x1="18" y1="7" x2="18" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="why-card-title">EQUIPAMENTOS DE QUALIDADE</h3>
+            <p class="why-card-text">
+              Aparelhos robustos, halteres variados e estações completas para musculação e condicionamento, sempre prontos para o seu treino.
+            </p>
+          </div>
+
+          <div class="why-card reveal-init">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">AMBIENTE SEGURO E ORGANIZADO</h3>
+            <p class="why-card-text">
+              Espaço planejado, limpo e estruturado para você treinar sem bagunça, com total conforto e foco no seu bem-estar.
+            </p>
+          </div>
+
+          <div class="why-card reveal-init">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="why-card-title">SEU OBJETIVO É A PRIORIDADE</h3>
+            <p class="why-card-text">
+              Seja para dar o primeiro passo ou para evoluir continuamente, nosso compromisso diário é acompanhar e apoiar a sua jornada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. SERVIÇOS
+         ======================================================================= -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">Treinamento</div>
+          <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+          <p class="section-subtitle">
+            Modalidades completas para atender às suas metas com atenção dedicada e estrutura preparada.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Musculação -->
+          <article class="service-card reveal-init">
+            <div class="service-img-wrapper">
+              <img 
+                src="assets/images/musculacao.jpg" 
+                alt="Aparelhos de musculação da Studio Power" 
+                class="service-img"
+                loading="lazy"
+                decoding="async"
+                width="600" 
+                height="375"
+              >
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-badge">Fortalecimento</span>
+              <h3 class="service-title">MUSCULAÇÃO</h3>
+              <p class="service-text">
+                Treinos com pesos livres e máquinas completas para fortalecimento muscular, resistência física e evolução progressiva no seu ritmo.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Personal Training -->
+          <article class="service-card reveal-init">
+            <div class="service-img-wrapper">
+              <img 
+                src="assets/images/hero-gym.jpg" 
+                alt="Acompanhamento personalizado na Studio Power" 
+                class="service-img"
+                loading="lazy"
+                decoding="async"
+                width="600" 
+                height="375"
+              >
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-badge">Atenção Individual</span>
+              <h3 class="service-title">PERSONAL TRAINING</h3>
+              <p class="service-text">
+                Acompanhamento direto e exclusivo com nosso time, desenhado especificamente para as suas necessidades e objetivos individuais.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Boxe -->
+          <article class="service-card reveal-init">
+            <div class="service-img-wrapper">
+              <img 
+                src="assets/images/funcional-boxe.jpg" 
+                alt="Área de Boxe com sacos de pancada na Studio Power" 
+                class="service-img"
+                loading="lazy"
+                decoding="async"
+                width="600" 
+                height="375"
+              >
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-badge">Coordenação & Energia</span>
+              <h3 class="service-title">BOXE</h3>
+              <p class="service-text">
+                Treinamento dinâmico na área de sacos de pancada, unindo técnica esportiva, agilidade, condicionamento físico e alívio do estresse.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Treino Funcional -->
+          <article class="service-card reveal-init">
+            <div class="service-img-wrapper">
+              <img 
+                src="assets/images/estrutura-halteres.jpg" 
+                alt="Pista de treino funcional com gramado sintético na Studio Power" 
+                class="service-img"
+                loading="lazy"
+                decoding="async"
+                width="600" 
+                height="375"
+              >
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-badge">Mobilidade & Agilidade</span>
+              <h3 class="service-title">TREINO FUNCIONAL</h3>
+              <p class="service-text">
+                Exercícios dinâmicos realizados na pista de gramado sintético, integrando movimentos funcionais para agilidade e condicionamento geral.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. ESTRUTURA E COMUNIDADE
+         ======================================================================= -->
+    <section class="section structure-section" id="estrutura">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">Nosso Espaço</div>
+          <h2 class="section-title">ESTRUTURA E COMUNIDADE</h2>
+          <p class="section-subtitle">
+            Conheça a realidade da nossa academia: equipamentos conservados, espaço amplo e o clima de quem treina junto.
+          </p>
+        </div>
+
+        <div class="structure-grid">
+          <figure class="structure-item structure-item-large reveal-init">
+            <img 
+              src="assets/images/hero-gym.jpg" 
+              alt="Área ampla de musculação e aparelhos da Studio Power" 
+              class="structure-item-img"
+              loading="lazy"
+              decoding="async"
+              width="1000" 
+              height="700"
+            >
+            <figcaption class="structure-item-overlay">
+              <h3 class="structure-item-title">ÁREA DE MUSCULAÇÃO COMPLETA</h3>
+              <p class="structure-item-desc">Aparelhos modernos para todos os grupos musculares e corredores organizados.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="structure-item structure-item-tall reveal-init">
+            <img 
+              src="assets/images/funcional-boxe.jpg" 
+              alt="Pista sintética e sacos de boxe da Studio Power" 
+              class="structure-item-img"
+              loading="lazy"
+              decoding="async"
+              width="600" 
+              height="800"
+            >
+            <figcaption class="structure-item-overlay">
+              <h3 class="structure-item-title">PISTA FUNCIONAL & BOXE</h3>
+              <p class="structure-item-desc">Gramado sintético dedicado para exercícios dinâmicos e área de sacos de pancada.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. VÍDEO TEASER
+         ======================================================================= -->
+    <section class="section video-section" id="teaser">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">Vídeo Oficial</div>
+          <h2 class="section-title">SINTA A ENERGIA DA STUDIO POWER</h2>
+          <p class="section-subtitle">
+            Assista ao nosso vídeo teaser oficial de 15 segundos e sinta o dinamismo e o ambiente da academia.
+          </p>
+        </div>
+
+        <div class="video-container reveal-init">
+          <div class="video-player-wrapper">
+            <video 
+              id="teaserVideo"
+              poster="assets/images/hero-gym.jpg" 
+              preload="metadata" 
+              playsinline 
+              controls
+              title="Vídeo Teaser da Studio Power em Votorantim"
+            >
+              <source src="assets/videos/teaser-oficial.mp4" type="video/mp4">
+              Seu navegador não suporta a reprodução deste vídeo.
+            </video>
+
+            <!-- Botão de Play Manual (sem autoplay com áudio) -->
+            <button class="video-play-overlay" id="videoPlayOverlay" aria-label="Reproduzir vídeo teaser">
+              <div class="video-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <span class="video-play-label">Assistir Teaser (15s)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. AULA EXPERIMENTAL (NOVOS ALUNOS)
+         ======================================================================= -->
+    <section class="section trial-section" id="aula-experimental">
+      <div class="container">
+        <div class="trial-wrapper">
+          <!-- Card de Imagem da Atleta (Crop focado na atleta, eliminando o texto de story) -->
+          <div class="trial-image-card reveal-init">
+            <img 
+              src="assets/images/novos-alunos.jpg" 
+              alt="Aluna se preparando para o treino na Studio Power" 
+              class="trial-img"
+              loading="lazy"
+              decoding="async"
+              width="600" 
+              height="750"
+            >
+            <div class="trial-image-badge">
+              <p class="trial-image-badge-title">Studio Power Votorantim</p>
+              <p class="trial-image-badge-sub">O primeiro passo para a sua transformação</p>
+            </div>
+          </div>
+
+          <!-- Conteúdo e Passos -->
+          <div class="trial-content reveal-init">
+            <div class="section-tag">Novos Alunos</div>
+            <h2 class="section-title">AINDA ESTÁ ADIANDO? SEU PRIMEIRO PASSO COMEÇA AQUI.</h2>
+            <p class="section-subtitle">
+              Deixe as desculpas para trás. Venha conhecer nosso espaço físico, conversar diretamente com nossos instrutores e sentir a metodologia na prática, sem compromisso.
+            </p>
+
+            <div class="trial-steps">
+              <div class="trial-step">
+                <div class="trial-step-number">1</div>
+                <div>
+                  <h3 class="trial-step-title">Clique no botão</h3>
+                  <p class="trial-step-desc">Acesse nosso WhatsApp oficial diretamente pelo link seguro.</p>
+                </div>
+              </div>
+
+              <div class="trial-step">
+                <div class="trial-step-number">2</div>
+                <div>
+                  <h3 class="trial-step-title">Escolha o seu horário</h3>
+                  <p class="trial-step-desc">Combine com nossa equipe o melhor dia e horário para a sua visita.</p>
+                </div>
+              </div>
+
+              <div class="trial-step">
+                <div class="trial-step-number">3</div>
+                <div>
+                  <h3 class="trial-step-title">Venha treinar</h3>
+                  <p class="trial-step-desc">Receba toda a atenção do nosso time na sua primeira aula sem custo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://wa.me/5515988299307?text=Ol%C3%A1!%20Conheci%20a%20Studio%20Power%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.97 6.84C8.79 6.84 8.5 6.91 8.25 7.18C8.01 7.45 7.33 8.08 7.33 9.38C7.33 10.68 8.28 11.94 8.41 12.11C8.54 12.28 10.27 14.93 12.91 16.07C13.54 16.34 14.03 16.5 14.41 16.62C15.05 16.82 15.63 16.79 16.09 16.72C16.61 16.64 17.67 16.08 17.89 15.45C18.12 14.83 18.12 14.29 18.05 14.18C17.98 14.07 17.8 14.01 17.53 13.88C17.27 13.74 15.98 13.11 15.74 13.02C15.5 12.93 15.33 12.89 15.15 13.16C14.98 13.42 14.48 14.01 14.33 14.18C14.18 14.36 14.03 14.38 13.77 14.25C13.5 14.11 12.65 13.84 11.64 12.94C10.85 12.24 10.32 11.37 10.16 11.11C10.01 10.84 10.15 10.7 10.28 10.56C10.4 10.44 10.55 10.25 10.68 10.09C10.82 9.94 10.87 9.82 10.96 9.65C11.05 9.47 11 9.32 10.93 9.18C10.87 9.05 10.34 7.76 10.13 7.23C9.92 6.72 9.7 6.79 9.53 6.78C9.38 6.78 9.19 6.84 8.97 6.84Z"/>
+                </svg>
+                <span>AGENDAR AULA EXPERIMENTAL</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. LOCALIZAÇÃO
+         ======================================================================= -->
+    <section class="section" id="localizacao">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">Onde Estamos</div>
+          <h2 class="section-title">LOCALIZAÇÃO EM VOTORANTIM</h2>
+          <p class="section-subtitle">
+            Localização de fácil acesso na cidade para você incluir o treino na sua rotina com total praticidade.
+          </p>
+        </div>
+
+        <div class="location-wrapper">
+          <div class="location-info-card reveal-init">
+            <div class="location-detail">
+              <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <p class="location-label">Endereço</p>
+                <p class="location-value">Rua Paula Ney, 1081</p>
+                <p class="location-subvalue">Votorantim — SP</p>
+              </div>
+            </div>
+
+            <div class="location-detail">
+              <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <div>
+                <p class="location-label">Atendimento e Agendamento</p>
+                <p class="location-value">Segunda a Sexta e Sábados</p>
+                <p class="location-subvalue">Consulte os horários das aulas no WhatsApp</p>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://maps.google.com/?q=Rua+Paula+Ney,+1081+-+Votorantim,+SP" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                <span>Abrir Rota no Google Maps</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="map-container reveal-init">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0772275465997!2d-47.447547!3d-23.538743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a983b62b6ff%3A0x6b4f74d0e1b6f00!2sR.+Paula+Ney%2C+1081+-+Votorantim%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+              title="Mapa de localização da Studio Power em Votorantim" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. CTA FINAL
+         ======================================================================= -->
+    <section class="section final-cta-section" id="cta-final">
+      <div class="container">
+        <div class="final-cta-box reveal-init">
+          <div class="section-tag" style="justify-content: center;">Studio Power</div>
+          <h2 class="final-cta-title">
+            SEU OBJETIVO É A <em>NOSSA PRIORIDADE.</em>
+          </h2>
+          <p class="final-cta-text">
+            Venha conhecer o nosso espaço, treinar com a atenção que você merece e iniciar sua transformação hoje mesmo.
+          </p>
+          <a href="https://wa.me/5515988299307?text=Ol%C3%A1!%20Conheci%20a%20Studio%20Power%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.0625rem; padding: 16px 36px;">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.97 6.84C8.79 6.84 8.5 6.91 8.25 7.18C8.01 7.45 7.33 8.08 7.33 9.38C7.33 10.68 8.28 11.94 8.41 12.11C8.54 12.28 10.27 14.93 12.91 16.07C13.54 16.34 14.03 16.5 14.41 16.62C15.05 16.82 15.63 16.79 16.09 16.72C16.61 16.64 17.67 16.08 17.89 15.45C18.12 14.83 18.12 14.29 18.05 14.18C17.98 14.07 17.8 14.01 17.53 13.88C17.27 13.74 15.98 13.11 15.74 13.02C15.5 12.93 15.33 12.89 15.15 13.16C14.98 13.42 14.48 14.01 14.33 14.18C14.18 14.36 14.03 14.38 13.77 14.25C13.5 14.11 12.65 13.84 11.64 12.94C10.85 12.24 10.32 11.37 10.16 11.11C10.01 10.84 10.15 10.7 10.28 10.56C10.4 10.44 10.55 10.25 10.68 10.09C10.82 9.94 10.87 9.82 10.96 9.65C11.05 9.47 11 9.32 10.93 9.18C10.87 9.05 10.34 7.76 10.13 7.23C9.92 6.72 9.7 6.79 9.53 6.78C9.38 6.78 9.19 6.84 8.97 6.84Z"/>
+            </svg>
+            <span>RESERVE SEU HORÁRIO</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       10. FOOTER
+       ======================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="brand-name">STUDIO <span>POWER</span></span>
+            <span class="brand-sub">FITNESS PERFORMANCE</span>
+          </div>
+          <p class="footer-desc">
+            "Mais que treino, um investimento em você."<br>
+            Rua Paula Ney, 1081 — Votorantim/SP
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">NAVEGAÇÃO</h4>
+          <nav class="footer-nav" aria-label="Navegação secundária">
+            <a href="#por-que" class="footer-link">Por Que Nós</a>
+            <a href="#servicos" class="footer-link">Serviços</a>
+            <a href="#estrutura" class="footer-link">Estrutura</a>
+            <a href="#teaser" class="footer-link">Vídeo Teaser</a>
+            <a href="#aula-experimental" class="footer-link">Aula Experimental</a>
+            <a href="#localizacao" class="footer-link">Localização</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">CONTATO & REDES</h4>
+          <div class="footer-social-links">
+            <a href="https://wa.me/5515988299307?text=Ol%C3%A1!%20Conheci%20a%20Studio%20Power%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp da Studio Power" title="WhatsApp +55 15 98829-9307">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.97 6.84C8.79 6.84 8.5 6.91 8.25 7.18C8.01 7.45 7.33 8.08 7.33 9.38C7.33 10.68 8.28 11.94 8.41 12.11C8.54 12.28 10.27 14.93 12.91 16.07C13.54 16.34 14.03 16.5 14.41 16.62C15.05 16.82 15.63 16.79 16.09 16.72C16.61 16.64 17.67 16.08 17.89 15.45C18.12 14.83 18.12 14.29 18.05 14.18C17.98 14.07 17.8 14.01 17.53 13.88C17.27 13.74 15.98 13.11 15.74 13.02C15.5 12.93 15.33 12.89 15.15 13.16C14.98 13.42 14.48 14.01 14.33 14.18C14.18 14.36 14.03 14.38 13.77 14.25C13.5 14.11 12.65 13.84 11.64 12.94C10.85 12.24 10.32 11.37 10.16 11.11C10.01 10.84 10.15 10.7 10.28 10.56C10.4 10.44 10.55 10.25 10.68 10.09C10.82 9.94 10.87 9.82 10.96 9.65C11.05 9.47 11 9.32 10.93 9.18C10.87 9.05 10.34 7.76 10.13 7.23C9.92 6.72 9.7 6.79 9.53 6.78C9.38 6.78 9.19 6.84 8.97 6.84Z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/studiopower_votorantim/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram da Studio Power" title="Instagram @studiopower_votorantim">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Studio Power — Fitness Performance. Todos os direitos reservados.</p>
+        <p>Rua Paula Ney, 1081 — Votorantim/SP</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       STICKY BAR MOBILE (Apenas Mobile, Foco na Thumb Zone)
+       ======================================================================= -->
+  <aside class="sticky-mobile-bar" aria-label="Ação rápida de agendamento">
+    <a href="https://wa.me/5515988299307?text=Ol%C3%A1!%20Conheci%20a%20Studio%20Power%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer" class="btn btn-primary sticky-mobile-btn">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.97 6.84C8.79 6.84 8.5 6.91 8.25 7.18C8.01 7.45 7.33 8.08 7.33 9.38C7.33 10.68 8.28 11.94 8.41 12.11C8.54 12.28 10.27 14.93 12.91 16.07C13.54 16.34 14.03 16.5 14.41 16.62C15.05 16.82 15.63 16.79 16.09 16.72C16.61 16.64 17.67 16.08 17.89 15.45C18.12 14.83 18.12 14.29 18.05 14.18C17.98 14.07 17.8 14.01 17.53 13.88C17.27 13.74 15.98 13.11 15.74 13.02C15.5 12.93 15.33 12.89 15.15 13.16C14.98 13.42 14.48 14.01 14.33 14.18C14.18 14.36 14.03 14.38 13.77 14.25C13.5 14.11 12.65 13.84 11.64 12.94C10.85 12.24 10.32 11.37 10.16 11.11C10.01 10.84 10.15 10.7 10.28 10.56C10.4 10.44 10.55 10.25 10.68 10.09C10.82 9.94 10.87 9.82 10.96 9.65C11.05 9.47 11 9.32 10.93 9.18C10.87 9.05 10.34 7.76 10.13 7.23C9.92 6.72 9.7 6.79 9.53 6.78C9.38 6.78 9.19 6.84 8.97 6.84Z"/>
+      </svg>
+      <span>RESERVE SEU HORÁRIO</span>
+    </a>
+  </aside>
+
+  <!-- Script Principal -->
+  <script src="js/script.js"></script>
+</body>
+</html>
