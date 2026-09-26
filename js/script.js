@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initSmoothScroll();
   initFloatingContact();
+  initBackToTop();
 });
 
 /**
@@ -196,4 +197,37 @@ function initFloatingContact() {
       toggleFloatingContact(false);
     });
   });
+}
+
+/**
+ * 6. Botão Voltar ao Topo
+ * Visível só depois de uma rolagem relevante; some perto do topo.
+ */
+function initBackToTop() {
+  const button = document.getElementById('backToTop');
+  if (!button) return;
+
+  const showAfter = 400;
+  let ticking = false;
+
+  function syncVisibility() {
+    button.hidden = window.scrollY <= showAfter;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(syncVisibility);
+    }
+  }, { passive: true });
+
+  button.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+
+  syncVisibility();
 }

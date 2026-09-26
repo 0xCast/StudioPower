@@ -35,7 +35,6 @@
   /* Layout */
   --container-max: 1200px;
   --header-height: 72px;
-  --sticky-bar-height: 68px;
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
@@ -67,14 +66,6 @@ body {
   background-color: var(--bg-main);
   color: var(--text-secondary);
   line-height: 1.6;
-  overflow-x: hidden;
-  padding-bottom: var(--sticky-bar-height);
-}
-
-@media (min-width: 769px) {
-  body {
-    padding-bottom: 0;
-  }
 }
 
 img, video {
@@ -1089,13 +1080,14 @@ button {
    -------------------------------------------------------------------------- */
 .location-wrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 32px;
+  min-width: 0;
 }
 
 @media (min-width: 900px) {
   .location-wrapper {
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
     gap: 48px;
     align-items: center;
   }
@@ -1109,6 +1101,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 0;
 }
 
 .location-detail {
@@ -1155,12 +1148,18 @@ button {
   background-color: var(--bg-card);
   aspect-ratio: 16 / 10;
   position: relative;
-  min-height: 300px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .map-container iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
+  max-width: 100%;
   border: none;
   filter: invert(90%) hue-rotate(180deg) contrast(110%);
 }
@@ -1330,41 +1329,7 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   13. Sticky Bar Mobile
-   -------------------------------------------------------------------------- */
-.sticky-mobile-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: var(--sticky-bar-height);
-  background-color: rgba(9, 9, 11, 0.98);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-top: 1px solid var(--border-subtle);
-  padding: 8px 16px;
-  z-index: 1000;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.7);
-}
-
-@media (min-width: 769px) {
-  .sticky-mobile-bar {
-    display: none;
-  }
-}
-
-.sticky-mobile-btn {
-  width: 100%;
-  max-width: 400px;
-  font-size: 0.9375rem;
-  padding: 12px 20px;
-}
-
-/* --------------------------------------------------------------------------
-   14. Botão Flutuante de Contato (Speed Dial)
+   13. Botão Flutuante de Contato (Speed Dial)
    -------------------------------------------------------------------------- */
 .floating-contact {
   position: fixed;
@@ -1378,8 +1343,7 @@ button {
 
 @media (max-width: 768px) {
   .floating-contact {
-    bottom: calc(var(--sticky-bar-height) + 16px + env(safe-area-inset-bottom, 0px));
-    right: calc(16px + env(safe-area-inset-right, 0px));
+    display: none;
   }
 }
 
@@ -1534,6 +1498,59 @@ button {
   .floating-item-btn .btn-icon {
     width: 18px;
     height: 18px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   14. Voltar ao Topo
+   -------------------------------------------------------------------------- */
+.back-to-top {
+  position: fixed;
+  z-index: 1100;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--red-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 0 20px var(--red-glow);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.back-to-top[hidden] {
+  display: none;
+}
+
+.back-to-top svg {
+  width: 22px;
+  height: 22px;
+}
+
+.back-to-top:hover {
+  background-color: var(--red-hover);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+@media (min-width: 769px) {
+  .back-to-top {
+    width: 46px;
+    height: 46px;
+    /* Ao lado do gatilho. O menu abre para cima, então não cobre este botão. */
+    right: calc(28px + 58px + 14px + env(safe-area-inset-right, 0px));
+    bottom: calc(34px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
   }
 }
 
