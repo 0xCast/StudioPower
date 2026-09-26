@@ -326,29 +326,32 @@ button {
   gap: 12px;
 }
 
-.btn-header-ig {
+.btn-header-ig,
+.btn-header-wa {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
   border-radius: var(--radius-sm);
-  color: var(--text-secondary);
+  color: #ffffff;
+  background-color: transparent;
   border: 1px solid var(--border-subtle);
   transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
 }
 
-.btn-header-ig:hover {
-  color: var(--text-primary);
+.btn-header-ig:hover,
+.btn-header-wa:hover {
+  color: #ffffff;
   border-color: var(--red-primary);
   background-color: var(--red-glow-subtle);
 }
 
-.btn-header-cta {
-  display: none;
-  padding: 10px 18px;
-  font-size: 0.8125rem;
-  min-height: 40px;
+.btn-header-ig .btn-icon,
+.btn-header-wa .btn-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .menu-toggle {
@@ -412,9 +415,6 @@ button {
 @media (min-width: 900px) {
   .nav-desktop {
     display: flex;
-  }
-  .btn-header-cta {
-    display: inline-flex;
   }
   .menu-toggle {
     display: none;
@@ -739,6 +739,10 @@ button {
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-normal);
+}
+
+.service-img-boxe {
+  object-position: center 32%;
 }
 
 .service-card:hover .service-img {
@@ -1329,180 +1333,7 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   13. Botão Flutuante de Contato (Speed Dial)
-   -------------------------------------------------------------------------- */
-.floating-contact {
-  position: fixed;
-  bottom: calc(28px + env(safe-area-inset-bottom, 0px));
-  right: calc(28px + env(safe-area-inset-right, 0px));
-  z-index: 1050;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-@media (max-width: 768px) {
-  .floating-contact {
-    display: none;
-  }
-}
-
-.floating-menu {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 12px;
-  align-items: flex-end;
-  margin-bottom: 14px;
-  pointer-events: none;
-}
-
-.floating-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  opacity: 0;
-  transform: translateY(16px) scale(0.85);
-  transition: opacity 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.floating-contact.is-open .floating-menu {
-  pointer-events: auto;
-}
-
-.floating-contact.is-open .floating-item {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.floating-contact.is-open .floating-item-ig {
-  transition-delay: 0.04s;
-}
-
-.floating-contact.is-open .floating-item-wa {
-  transition-delay: 0.08s;
-}
-
-.floating-item-label {
-  background-color: rgba(18, 18, 22, 0.95);
-  color: var(--text-primary);
-  border: 1px solid var(--border-subtle);
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
-  white-space: nowrap;
-  pointer-events: auto;
-  transition: border-color var(--transition-fast), color var(--transition-fast);
-}
-
-.floating-item:hover .floating-item-label {
-  border-color: var(--red-primary);
-  color: #ffffff;
-}
-
-.floating-item-btn {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background-color: var(--red-primary);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5), 0 0 16px var(--red-glow);
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
-  flex-shrink: 0;
-}
-
-.floating-item:hover .floating-item-btn {
-  background-color: var(--red-hover);
-  transform: scale(1.1);
-}
-
-.floating-item-btn .btn-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.floating-trigger {
-  position: relative;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background-color: var(--red-primary);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 0 20px var(--red-glow);
-  cursor: pointer;
-  transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.floating-trigger:hover {
-  background-color: var(--red-hover);
-  transform: scale(1.06);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 28px rgba(255, 30, 39, 0.5);
-}
-
-.floating-trigger:active {
-  transform: scale(0.96);
-}
-
-.floating-trigger .trigger-icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.floating-trigger .trigger-icon-wa {
-  opacity: 1;
-  transform: scale(1) rotate(0deg);
-}
-
-.floating-trigger .trigger-icon-close {
-  opacity: 0;
-  transform: scale(0.5) rotate(-90deg);
-  color: #ffffff;
-}
-
-.floating-contact.is-open .floating-trigger .trigger-icon-wa {
-  opacity: 0;
-  transform: scale(0.5) rotate(90deg);
-}
-
-.floating-contact.is-open .floating-trigger .trigger-icon-close {
-  opacity: 1;
-  transform: scale(1) rotate(0deg);
-}
-
-@media (max-width: 480px) {
-  .floating-trigger {
-    width: 52px;
-    height: 52px;
-  }
-  .floating-item-btn {
-    width: 42px;
-    height: 42px;
-  }
-  .floating-item-btn .btn-icon {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-/* --------------------------------------------------------------------------
-   14. Voltar ao Topo
+   13. Voltar ao Topo
    -------------------------------------------------------------------------- */
 .back-to-top {
   position: fixed;
@@ -1543,9 +1374,8 @@ button {
   .back-to-top {
     width: 46px;
     height: 46px;
-    /* Ao lado do gatilho. O menu abre para cima, então não cobre este botão. */
-    right: calc(28px + 58px + 14px + env(safe-area-inset-right, 0px));
-    bottom: calc(34px + env(safe-area-inset-bottom, 0px));
+    right: calc(28px + env(safe-area-inset-right, 0px));
+    bottom: calc(28px + env(safe-area-inset-bottom, 0px));
   }
 
   .back-to-top svg {

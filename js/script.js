@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initVideoPlayer();
   initScrollReveal();
   initSmoothScroll();
-  initFloatingContact();
   initBackToTop();
 });
 
@@ -153,54 +152,7 @@ function initSmoothScroll() {
 }
 
 /**
- * 5. Botão Flutuante de Contato (Speed Dial)
- */
-function initFloatingContact() {
-  const container = document.getElementById('floatingContact');
-  const trigger = document.getElementById('floatingTrigger');
-  const menu = document.getElementById('floatingMenu');
-
-  if (!container || !trigger || !menu) return;
-
-  function toggleFloatingContact(open) {
-    const isOpen = open !== undefined ? open : !container.classList.contains('is-open');
-    container.classList.toggle('is-open', isOpen);
-    trigger.setAttribute('aria-expanded', String(isOpen));
-    menu.setAttribute('aria-hidden', String(!isOpen));
-  }
-
-  // Toggle ao clicar no gatilho
-  trigger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    toggleFloatingContact();
-  });
-
-  // Fechar ao clicar fora
-  document.addEventListener('click', (e) => {
-    if (container.classList.contains('is-open') && !container.contains(e.target)) {
-      toggleFloatingContact(false);
-    }
-  });
-
-  // Fechar com a tecla Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && container.classList.contains('is-open')) {
-      toggleFloatingContact(false);
-      trigger.focus();
-    }
-  });
-
-  // Fechar ao clicar em qualquer uma das opções
-  const items = container.querySelectorAll('.floating-item');
-  items.forEach((item) => {
-    item.addEventListener('click', () => {
-      toggleFloatingContact(false);
-    });
-  });
-}
-
-/**
- * 6. Botão Voltar ao Topo
+ * 5. Botão Voltar ao Topo
  * Visível só depois de uma rolagem relevante; some perto do topo.
  */
 function initBackToTop() {
